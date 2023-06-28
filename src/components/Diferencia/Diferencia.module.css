@@ -1,0 +1,62 @@
+.containerMaxDif{
+    background-color: #5bb6fb1a;
+    padding: 2rem;
+}
+
+.containerMaxDif button{
+    margin: auto;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    width: 150px;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background-color: #EA7928;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.containerMaxDif button:hover{
+    cursor: pointer;
+}
+
+.diferenciaContainer{
+    display: flex;
+    margin: auto;
+    padding: 10rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.diferenciaContainer h1{
+    color: #2D5D8C;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.diferenceGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 50%;
+    gap: 1rem;
+}
+
+.gridElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1.5rem;
+    gap: 2rem;
+    border: 2px solid #daecfe;
+    border-radius: 10px;
+    transition: 0.3s border ease;
+}
+
+.gridElement:hover{
+    border: 2px solid #9aaec1;
+}

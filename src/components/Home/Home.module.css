@@ -1,0 +1,35 @@
+.homeGeneral{
+    width: 75%;
+    background-color: #2D5D8C;
+    height: 2px;
+    border-radius: 2px;
+}
+
+.imageFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageFooter img{
+    width: 40%;
+}
+
+.imageFooter h1{
+    color: #0A2A43;
+}
+
+.imageFooter button{
+    background-color: #F17722;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+.imageFooter button:hover{
+    cursor: pointer;
+}

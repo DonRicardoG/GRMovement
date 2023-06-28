@@ -1,0 +1,50 @@
+.mainBackground{
+    background-color: #5bb6fb1a;
+    display: flex;
+    padding: 3rem;
+}
+
+.textMainPart h1{
+    font-size: 40px;
+    color: #0A2A43;
+}
+
+.textMainPart{
+    width: 50%;
+    padding: 1rem;
+}
+
+.textMainPart hr{
+    height: 5px;
+    width: 170px;
+    margin: 0;
+    background-color: #F6761C;
+    border: none;
+}
+
+.textMainPart h2{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #0A2A43;
+}
+
+.MainPartBtn button{
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 2rem;
+    color: white;
+    background: rgb(16,54,92);
+    background: linear-gradient(90deg, rgba(16,54,92,1) 50%, rgba(246,118,28,1) 98%);
+}
+
+.MainPartBtn button:hover{
+    cursor: pointer;
+}
+
+.MainPartBtn a{
+    text-decoration: none;
+    color: #0A2A43;
+    font-weight: bold;
+}
