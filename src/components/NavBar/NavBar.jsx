@@ -1,29 +1,26 @@
 import React from 'react'
-import logo from '../../Photos/logo.png'
-import style from './NavBar.module.css'
 import { Link } from 'react-router-dom'
+import style from './NavBar.module.css'
+import logo from '../../Photos/logo.png'
 
-const NavBar = () => {
+const NavBar2 = () => {
   return (
-    <div>
-      <nav className={style.navBarStyle}>
-        <div>
-          <Link to='/'><img src={logo} alt="logo" width="90px" height="80px"/></Link>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <Link class="navbar-brand" to='/'><img src={logo} alt="logo"  width="90px" height="80px"/></Link>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" className={style.listNavBar}>
+                    <li><Link to='/details'>¿Como funciona?</Link></li>
+                    <li><Link to='/contact'>Contactanos</Link></li>
+                    <li><a href="#">Testimonios</a></li>
+                </div>
+            </div>
         </div>
-        <ul className={style.listNavBar}>
-          <li><Link to='/details'>¿Como funciona?</Link></li>
-          <li><Link to='/contact'>Contactanos</Link></li>
-          <li><a href="#">Testimonios</a></li>
-        </ul>
-        <div className={style.navBarBtn}>
-          <button >
-            Blog
-          </button>
-        </div>
-        
-      </nav>
-    </div>
+    </nav>
   )
 }
 
-export default NavBar
+export default NavBar2

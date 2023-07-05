@@ -1,0 +1,148 @@
+.contacUsContainer{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cUsImgContainerContact{
+    display: none;
+}
+
+.cUsImgContainerContact h1{
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.cUsImgContainerContact h2{
+    color: black;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.formContainerContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.formContainerContact h1{
+    color: #2D5D8C;
+    text-align: center;
+}
+
+.imageFooterContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageFooterContact img{
+    width: 100%;
+}
+
+.imageFooterContact button{
+    background-color: #F17722;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+.imageFooterContact button:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 1280px){
+    .formContainerContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    .cUsImgContainerContact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacUsContainer{
+        width: 75%;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: transparent !important;
+    }
+}
+
+@media (min-width: 500px){
+    .imageFooterContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imageFooterContact img{
+        width: 50%;
+    }
+    
+    .imageFooter h1{
+        color: #0A2A43;
+    }
+    
+    .imageFooter button{
+        background-color: #F17722;
+        border: none;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 200px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .imageFooter button:hover{
+        cursor: pointer;
+    }
+
+    .contacUsContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: rgb(253, 253, 253);
+        border-radius: 1rem;
+        margin: 2rem auto;
+    }
+    
+    .formContainer2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .formContainer2 h1{
+        color: #2D5D8C;
+        padding: 3rem;
+        margin: 0 auto;
+        width: 75%;
+    
+    }
+
+}
+

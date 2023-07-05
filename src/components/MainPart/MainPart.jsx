@@ -14,10 +14,9 @@ const MainPart = () => {
                 <a href="#">Mandanos mensaje</a>
             </div>
         </div>
-        <div>
+        <div className={style.imgNone}>
             <img src={mainPhoto} alt="main photo" width="500px" />
         </div>
-        
     </div>
   )
 }

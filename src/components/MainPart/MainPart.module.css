@@ -1,7 +1,46 @@
+.imgNone{
+    display: none;
+}
+
 .mainBackground{
     background-color: #5bb6fb1a;
     display: flex;
     padding: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.textMainPart{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.textMainPart button{
+    margin: auto;
+}
+
+.MainPartBtn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainPartBtn button{
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: rgb(16,54,92);
+    background: linear-gradient(90deg, rgba(16,54,92,1) 50%, rgba(246,118,28,1) 98%);
+}
+
+.MainPartBtn button:hover{
+    cursor: pointer;
 }
 
 .textMainPart h1{
@@ -10,7 +49,7 @@
 }
 
 .textMainPart{
-    width: 50%;
+    width: 100%;
     padding: 1rem;
 }
 
@@ -28,23 +67,68 @@
     color: #0A2A43;
 }
 
-.MainPartBtn button{
-    height: 40px;
-    width: 200px;
-    border-radius: 15px;
-    border: none;
-    margin-right: 2rem;
-    color: white;
-    background: rgb(16,54,92);
-    background: linear-gradient(90deg, rgba(16,54,92,1) 50%, rgba(246,118,28,1) 98%);
-}
-
-.MainPartBtn button:hover{
-    cursor: pointer;
-}
-
 .MainPartBtn a{
     text-decoration: none;
     color: #0A2A43;
     font-weight: bold;
+}
+
+
+
+@media (min-width: 500px){
+    .imgNone img{
+        width: 350px;
+    }
+
+    .imgNone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textMainPart h1{
+        font-size: 40px;
+        color: #0A2A43;
+    }
+    
+    .textMainPart{
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .textMainPart hr{
+        height: 5px;
+        width: 170px;
+        margin: 0;
+        background-color: #F6761C;
+        border: none;
+    }
+    
+    .textMainPart h2{
+        font-size: 20px;
+        font-weight: lighter;
+        color: #0A2A43;
+    }
+}
+
+@media (min-width: 1280px){
+    .mainBackground{
+        background-color: #5bb6fb1a;
+        display: flex;
+        padding: 3rem;
+        justify-content: space-around;
+    }
+
+    .imgNone img{
+        width: 650px;
+        margin: auto;
+    }
+
+    .textMainPart{
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+        padding: 2rem;
+        margin: auto;
+    }
 }

@@ -37,3 +37,31 @@
 .videoPartFlex img{
     margin: 0 0 0 10rem;
 }
+
+@media (max-width: 500px){
+   .videoPartFlex{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+   }
+
+   .videoPartFlex img{
+    margin: auto;
+    }
+}
+
+@media (max-width: 1280px){
+    .videoPartFlex{
+        display: flex;
+        margin: 10rem 10rem;
+        align-items: center;
+        background-image: none;
+        gap: 0;
+   }
+
+   .videoPartFlex img{
+        margin: auto;
+    }
+}

@@ -1,3 +1,4 @@
+
 .containerMaxDif{
     background-color: #5bb6fb1a;
     padding: 2rem;
@@ -37,14 +38,6 @@
     font-weight: bold;
 }
 
-.diferenceGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    width: 50%;
-    gap: 1rem;
-}
-
 .gridElement{
     display: flex;
     justify-content: center;
@@ -55,8 +48,67 @@
     border: 2px solid #daecfe;
     border-radius: 10px;
     transition: 0.3s border ease;
+    text-transform: capitalize;
 }
 
 .gridElement:hover{
     border: 2px solid #9aaec1;
+}
+
+.containerMaxDif{
+    display: flex;
+    flex-direction: column;
+}
+
+.diferenciaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5rem;
+}
+
+.diferenceGrid{
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.diferenciaContainer h1{
+font-size: 5rem;
+}
+
+
+@media (min-width: 500px){
+    .diferenciaContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 2rem;
+   }
+
+   .diferenceGrid{
+        width: 100%;
+   }
+
+   .diferenceGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 50%;
+    gap: 1rem;
+}
+}
+
+@media (min-width: 1280px){
+    .diferenciaContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 2rem;
+   }
 }

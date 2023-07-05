@@ -11,6 +11,7 @@
     align-items: center;
     margin: 1rem 2rem;
     background-color: white;
+    height: 300px;
 }
 
 .serviceCard img{
@@ -33,39 +34,12 @@
     border: none;
 }
 
-.serviceFlex{
-    display: flex;
-    width: 75%;
-    margin: auto;
-    position: relative;
-    justify-content: center;
-    top: -30px;
-}
-
-.serviceFlex{
-    display: none;
-    margin: auto;
-    position: relative;
-    justify-content: center;
-    top: -30px;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    gap: 3rem;
+.carousel{
+    margin: 2rem 0;
 }
 
 @media (min-width: 500px){
-    .serviceFlex{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-}
-
-@media (min-width: 1280px){
-    .serviceFlex{
-        display: flex;
-        flex-direction: row;
-        width: 75%;
-    }
+   .carousel{
+    display: none;
+   }
 }

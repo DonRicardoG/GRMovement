@@ -1,11 +1,6 @@
-
-
-/* footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    margin: 5rem 0 0;
-} */
+@media (min-width: 1280px){
+    
+}
 
 .footerInformation{
     display: flex;
@@ -85,4 +80,20 @@
     background-repeat: no-repeat;
     height: 200px;
     position: static;
+}
+
+.footerInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 500px){
+    .footerInformation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
