@@ -1,67 +1,71 @@
-.videoPartFlex{
+.videoPartFlex {
+  display: flex;
+  margin: 10rem 10rem;
+  gap: 20rem;
+  align-items: center;
+  background-image: url("../../Photos/backgroundUs.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.videoPartFlex h1 {
+  color: #2d5d8c;
+}
+
+.videoPartFlex p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.videoPartBtn {
+  display: flex;
+  margin: auto;
+  border: none;
+  padding: 1rem 3rem;
+  background-color: #ea7928;
+  color: white;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  margin-top: 5rem;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.videoPartBtn:hover {
+  cursor: pointer;
+}
+
+.videoPartFlex img {
+  margin: 0 0 0 10rem;
+}
+
+@media (max-width: 500px) {
+  .videoPartFlex {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+  }
+
+  .videoPartFlex img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .videoPartFlex {
     display: flex;
     margin: 10rem 10rem;
-    gap: 20rem;
     align-items: center;
-    background-image: url('../../Photos/backgroundUs.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    background-image: none;
+    gap: 0;
+  }
 
-.videoPartFlex h1{
-    color: #2D5D8C;
-}
-
-.videoPartFlex p{
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.videoPartBtn{
-    display: flex;
+  .videoPartFlex img {
     margin: auto;
-    border: none;
-    padding: 1rem 3rem;
-    background-color: #EA7928;
-    color: white;
-    font-weight: bold;
-    border-radius: 1.5rem;
-    margin-top: 5rem;
-}
-
-.videoPartBtn:hover{
-    cursor: pointer;
-}
-
-.videoPartFlex img{
-    margin: 0 0 0 10rem;
-}
-
-@media (max-width: 500px){
-   .videoPartFlex{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        background-image: none;
-   }
-
-   .videoPartFlex img{
-    margin: auto;
-    }
-}
-
-@media (max-width: 1280px){
-    .videoPartFlex{
-        display: flex;
-        margin: 10rem 10rem;
-        align-items: center;
-        background-image: none;
-        gap: 0;
-   }
-
-   .videoPartFlex img{
-        margin: auto;
-    }
+  }
 }
