@@ -7,9 +7,6 @@ import detail from "../../Photos/detail.png";
 import { Link } from "react-router-dom";
 
 const Diferencia = () => {
-  const handleClick = () => {
-    console.log("click");
-  };
   return (
     <div className={style.containerMaxDif}>
       <div className={style.diferenciaContainer}>
@@ -45,7 +42,7 @@ const Diferencia = () => {
           </div>
         </div>
       </div>
-      <Link to="/contact" onClick={handleClick}>
+      <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
         empieza ya
       </Link>
     </div>

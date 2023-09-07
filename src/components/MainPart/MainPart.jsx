@@ -15,10 +15,18 @@ const MainPart = () => {
           exterior.
         </h2>
         <div>
-          <Link to="/contact" className={style.mainPartBtn}>
+          <Link
+            to="/contact"
+            onClick={() => window.scrollTo(0, 0)}
+            className={style.mainPartBtn}
+          >
             <p>Cotiza tu plan</p>
           </Link>
-          <Link to="/contact" className={style.mainPartLink}>
+          <Link
+            to="/contact"
+            onClick={() => window.scrollTo(0, 0)}
+            className={style.mainPartLink}
+          >
             <p>Mandanos mensaje</p>
           </Link>
         </div>

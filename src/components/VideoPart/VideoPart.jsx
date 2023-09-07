@@ -17,7 +17,11 @@ const VideoPart = () => {
       <div>
         <h1>Haciendo tus importaciones simples</h1>
         <p>Conectando de Punto A a B</p>
-        <Link to="/contact" className={style.videoPartBtn}>
+        <Link
+          to="/contact"
+          onClick={() => window.scrollTo(0, 0)}
+          className={style.videoPartBtn}
+        >
           Contrata YA
         </Link>
       </div>
